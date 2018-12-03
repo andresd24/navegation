@@ -1,18 +1,21 @@
-<!--
-  Generated template for the ModalPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>modal</ion-title>
-  </ion-navbar>
+    <ion-navbar>
+        <ion-title>Modal Page</ion-title>
+    </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
+    <h1>Modal</h1>
+
+    <button ion-button block color="primary" (click)="closeWithParameters()">
+        Close with parameters
+    </button>
+
+    <button ion-button block color="purple" (click)="closeWithoutParameters()">
+        Close without parameters
+  </button>
 
 </ion-content>
