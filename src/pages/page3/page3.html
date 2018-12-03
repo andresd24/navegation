@@ -1,0 +1,21 @@
+
+<ion-header>
+
+    <ion-navbar color="primary">
+      <ion-title>{{hero.name}}</ion-title>
+    </ion-navbar>
+  
+  </ion-header>
+  
+  
+  <ion-content padding>
+    <h3 text-center>{{ hero.power }}</h3>
+
+    <button ion-button color="primary" (click)="goBack()">
+        Go back with event
+    </button>
+    <button ion-button color="secondary" (click)="goToRoot()">
+        Go back to Root
+    </button>
+ </ion-content>
+  
