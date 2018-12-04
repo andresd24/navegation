@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController, NavParams, ModalController } from 'ionic-angular';
 
 import { ModalPage } from '../modal/modal';
+import { TabsPage } from '../tabs/tabs';
 
 @Component({
   selector: 'page-settings',
@@ -17,7 +18,8 @@ export class SettingsPage {
   }
 
   activatePrincipal() {
-      this.navCtrl.parent.select(0);
+  //    this.navCtrl.parent.select(0);
+      this.navCtrl.setRoot(TabsPage);
   }
 
   showModal() {

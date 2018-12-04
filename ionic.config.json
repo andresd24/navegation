@@ -1,6 +1,8 @@
 {
   "name": "navegation",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "ionic-angular",
   "id": "294b621c"
 }

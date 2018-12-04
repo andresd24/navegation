@@ -6,27 +6,28 @@
 -->
 <ion-header>
 
-  <ion-navbar color="primary">
-    <ion-title>principal - root</ion-title>
-  </ion-navbar>
+    <ion-navbar color="primary">
+        <ion-title>principal - root</ion-title>
+
+        <ion-buttons>
+            <button ion-button icon-only (click)="showMenu()">
+            <ion-icon name="menu"></ion-icon>      
+        </button>
+        </ion-buttons>
+
+    </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-  <h1>Root</h1>
+    <h1>Root</h1>
 
-  <button ion-button
-          block
-          color="primary"
-          (click)="navegarPagina()">
+    <button ion-button block color="primary" (click)="navegarPagina()">
       Go to Page 2
     </button>
 
-    <button ion-button
-        block
-        color="secondary"
-        [navPush]="page2">
+    <button ion-button block color="secondary" [navPush]="page2">
     Go to Page 2 - HTML
   </button>
 </ion-content>
